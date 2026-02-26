@@ -85,4 +85,4 @@ year={2025}
 ```
 
 ### Acknowledgement
-This codebase is heavily borrowed from [A Comprehensive Overhaul of Feature Distillation ](https://github.com/clovaai/overhaul-distillation). Thanks for their excellent work.
+This codebase is heavily borrowed from [Logit Standardization in Knowledge Distillation](https://github.com/sunshangquan/logit-standardization-KD). Thanks for their excellent work.
