@@ -20,7 +20,7 @@ Environments:
 
 Install the package:
   ```shell
-  sudo pip3 install -r requirements.txt
+sudo pip3 install -r requirements.txt
 sudo python setup.py develop
 pip install git+https://github.com/openai/CLIP.git
 pip install ftfy regex tqdm
@@ -29,7 +29,7 @@ pip install ftfy regex tqdm
 ### Distillation Training on CIFAR-100
 - Download the CIFAR-100 dataset and put it in ```./data```.
 - Download the [cifar_teachers.tar](https://github.com/megvii-research/mdistiller/releases/tag/checkpoints) and untar it to ```./download_ckpts``` via ```tar xvf cifar_teachers.tar```.
-Cache the features and logits of the CLIP using ```cache.py``` file. It saves the features and logits in ```./clip_cache```.
+- Cache the features and logits of the CLIP using ```cache.py``` file. It saves the features and logits in ```./clip_cache```.
 
 
 After doing above steps, train the student using:
