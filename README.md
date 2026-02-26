@@ -1,4 +1,4 @@
-## Enriching Knowledge Distillation with Cross-Modal Teacher Fusion
+## Enriching Knowledge Distillation with Cross-Modal Teacher Fusion (Findings of CVPR)
 [![arXiv](https://img.shields.io/badge/arXiv-1511.09286-<COLOR>.svg)](https://arxiv.org/abs/2511.09286)
 
 The source code of [(Enriching Knowledge Distillation with Cross-Modal Teacher Fusion)](https://arxiv.org/abs/2511.09286).
