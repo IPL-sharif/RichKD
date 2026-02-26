@@ -1,0 +1,27 @@
+EXPERIMENT:
+  NAME: ""
+  TAG: "rich_L,resnet32x4,resnet8x4"
+  PROJECT: "cifar100_baselines"
+DISTILLER:
+  TYPE: "RICHKD"
+  TEACHER: "resnet32x4"
+  STUDENT: "resnet8x4"
+SOLVER:
+  BATCH_SIZE: 64
+  EPOCHS: 240
+  LR: 0.05
+  LR_DECAY_STAGES: [150, 180, 210]
+  LR_DECAY_RATE: 0.1
+  WEIGHT_DECAY: 0.0005
+  MOMENTUM: 0.9
+  TYPE: "SGD"
+RICH:
+  CLIP_LOGITS: "./clip_cache/multi_prompt/cifar100_train_clip_logits.pt"
+  TEMPERATURE: 3
+  FUSION_ALPHA: 0.7
+  LOSS:
+    LOGIT_WEIGHT: 3
+    FEAT_WEIGHT: 0
+    CE_WEIGHT: 1
+    
+  
