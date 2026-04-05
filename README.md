@@ -4,9 +4,9 @@
 The source code of [(Enriching Knowledge Distillation with Cross-Modal Teacher Fusion)](https://arxiv.org/abs/2511.09286).
  
  Also, see our other works:
- - [Adaptive Inter-Class Similarity Distillation for Semantic Segmentation](https://github.com/AmirMansurian/AICSD)
- - [A Comprehensive Survey on Knowledge Distillation](https://github.com/IPL-sharif/KD_Survey)
- - [Attention as Geometric Transformation: Revisiting Feature Distillation for Semantic Segmentation](https://github.com/AmirMansurian/AttnFD)
+ - [Attention as Geometric Transformation: Revisiting Feature Distillation for Semantic Segmentation](https://github.com/AmirMansurian/AttnFD) [WACV'26]
+ - [A Comprehensive Survey on Knowledge Distillation](https://github.com/IPL-sharif/KD_Survey) [TMLR'25]
+ - [Adaptive Inter-Class Similarity Distillation for Semantic Segmentation](https://github.com/AmirMansurian/AICSD) [MTAP'25]
 
 <p align="left">
  <img src="https://raw.githubusercontent.com/IPL-sharif/RichKD/refs/heads/main/Figures/RichKD.png"  width="700" height="450"/>
@@ -59,6 +59,14 @@ If you use this repository for your research or wish to refer to our distillatio
   year={2025}
 }
 
+@inproceedings{mansourian2026attention,
+  title={Attention as Geometric Transformation: Revisiting Feature Distillation for Semantic Segmentation},
+  author={Mansourian, Amirmohammad and Jalali, Arya and Ahmadi, Rozhan and Kasaei, Shohreh},
+  booktitle={Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision},
+  pages={1287--1297},
+  year={2026}
+}
+
 @article{mansourian2025a,
 title={A Comprehensive Survey on Knowledge Distillation},
 author={Amir M. Mansourian and Rozhan Ahmadi and Masoud Ghafouri and Amir Mohammad Babaei and Elaheh Badali Golezani and Zeynab yasamani ghamchi and Vida Ramezanian and Alireza Taherian and Kimia Dinashi and Amirali Miri and Shohreh Kasaei},
@@ -74,13 +82,6 @@ year={2025}
   pages={1--20},
   year={2025},
   publisher={Springer}
-}
-
-@article{mansourian2024attention,
-  title={Attention-guided Feature Distillation for Semantic Segmentation},
-  author={Mansourian, Amir M and Jalali, Arya and Ahmadi, Rozhan and Kasaei, Shohreh},
-  journal={arXiv preprint arXiv:2403.05451},
-  year={2024}
 }
 ```
 
