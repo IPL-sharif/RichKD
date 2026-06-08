@@ -52,12 +52,14 @@ After doing above steps, train the student using:
 If you use this repository for your research or wish to refer to our distillation method, please use the following BibTeX entries:
 ```bibtex
 
-@article{mansourian2025enriching,
-  title={Enriching Knowledge Distillation with Cross-Modal Teacher Fusion},
+@inproceedings{mansourian2026enriching,
+  title={Enriching knowledge distillation with cross-modal teacher fusion},
   author={Mansourian, Amir M and Babaei, Amir Mohammad and Kasaei, Shohreh},
-  journal={arXiv preprint arXiv:2511.09286},
-  year={2025}
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={2893--2903},
+  year={2026}
 }
+
 
 @inproceedings{mansourian2026attention,
   title={Attention as Geometric Transformation: Revisiting Feature Distillation for Semantic Segmentation},
