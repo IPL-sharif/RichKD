@@ -1,4 +1,5 @@
 import os
+cifar100_model_prefix = "./download_ckpts/cifar_teachers/"
 from .resnet import (
     resnet8,
     resnet14,

@@ -7,7 +7,7 @@ class CLIPTeacher(nn.Module):
         cache = torch.load(logits_path)
         logits = cache["logits"]
 
-        cache = torch.load(features_path)
+        #cache = torch.load(features_path)
         feats = cache["features"]
 
         self.register_buffer("logits", logits.to(device))

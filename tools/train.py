@@ -7,6 +7,7 @@ import torch.backends.cudnn as cudnn
 cudnn.benchmark = True
 
 from mdistiller.models import cifar_model_dict, imagenet_model_dict
+from mdistiller.models.cifar.CLIP import CLIPTeacher
 from mdistiller.distillers import distiller_dict
 from mdistiller.dataset import get_dataset, get_dataset_strong
 from mdistiller.engine.utils import load_checkpoint, log_msg
@@ -74,7 +75,7 @@ def main(cfg, resume, opts):
             )
         else:
             distiller = distiller_dict[cfg.DISTILLER.TYPE](
-                model_student, model_teacher, cfg, clip_teacher
+                model_student, model_teacher, cfg, num_data, clip_teacher
             )
     distiller = torch.nn.DataParallel(distiller.cuda())
 

@@ -78,7 +78,7 @@ CFG.RICH.NCE.K = 16384
 CFG.RICH.NCE.MOMENTUM = 0.5
 CFG.RICH.NCE.TEMPERATURE = 0.07
 
-CFG.RICH.CLIP_LOGITS = './clip_cache/logits/cifar100_train_clip_logits.pt'
+CFG.RICH.CLIP_LOGITS = './clip_cache/multi_prompt/cifar100_train_clip_logits.pt'
 CFG.RICH.CLIP_FEATS = './clip_cache/feats/cifar100_train_clip_features.pt'
 CFG.RICH.TEMPERATURE = 3
 CFG.RICH.FUSION_ALPHA = 0.7
