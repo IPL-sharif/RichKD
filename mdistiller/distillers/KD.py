@@ -22,7 +22,7 @@ def kd_loss(logits_student_in, logits_teacher_in, temperature, logit_stand):
 class KD(Distiller):
     """Distilling the Knowledge in a Neural Network"""
 
-    def __init__(self, student, teacher, cfg):
+    def __init__(self, student, teacher, cfg, num_data, CLIP):
         super(KD, self).__init__(student, teacher)
         self.temperature = cfg.KD.TEMPERATURE
         self.ce_loss_weight = cfg.KD.LOSS.CE_WEIGHT
