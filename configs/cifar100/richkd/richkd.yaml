@@ -24,4 +24,4 @@ RICH:
   LOSS:
     LOGIT_WEIGHT: 3
     FEAT_WEIGHT: 0.0 #0.8
-    CE_WEIGHT: 1
+    CE_WEIGHT: 1.0
