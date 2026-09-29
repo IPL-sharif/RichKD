@@ -1,7 +1,7 @@
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-
+import math
 from ._base import Distiller
 
 def normalize(logit):
@@ -28,16 +28,20 @@ class KD(Distiller):
         self.ce_loss_weight = cfg.KD.LOSS.CE_WEIGHT
         self.kd_loss_weight = cfg.KD.LOSS.KD_WEIGHT
         self.logit_stand = cfg.EXPERIMENT.LOGIT_STAND 
+        self.CLIP = CLIP
 
-    def forward_train(self, image, target, **kwargs):
+    def forward_train(self, image, target, logits_fused, **kwargs):
         logits_student, _ = self.student(image)
         with torch.no_grad():
             logits_teacher, _ = self.teacher(image)
+            logits_clip, _ = self.CLIP(index)
 
         # losses
         loss_ce = self.ce_loss_weight * F.cross_entropy(logits_student, target)
+
+        logits_fused= 0.7 * logits_teacher + 0.3 * logits_clip
         loss_kd = self.kd_loss_weight * kd_loss(
-            logits_student, logits_teacher, self.temperature, self.logit_stand
+            logits_student, logits_fused, self.temperature, self.logit_stand
         )
         losses_dict = {
             "loss_ce": loss_ce,
