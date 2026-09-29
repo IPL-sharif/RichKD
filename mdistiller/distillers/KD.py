@@ -30,7 +30,7 @@ class KD(Distiller):
         self.logit_stand = cfg.EXPERIMENT.LOGIT_STAND 
         self.CLIP = CLIP
 
-    def forward_train(self, image, target, logits_fused, **kwargs):
+    def forward_train(self, image, target, index, **kwargs):
         logits_student, _ = self.student(image)
         with torch.no_grad():
             logits_teacher, _ = self.teacher(image)
