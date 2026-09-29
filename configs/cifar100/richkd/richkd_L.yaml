@@ -17,7 +17,7 @@ SOLVER:
   TYPE: "SGD"
 RICH:
   CLIP_LOGITS: "./clip_cache/multi_prompt/cifar100_train_clip_logits.pt"
-  TEMPERATURE: 3.0
+  TEMPERATURE: 3
   FUSION_ALPHA: 0.7
   LOSS:
     LOGIT_WEIGHT: 3.0
