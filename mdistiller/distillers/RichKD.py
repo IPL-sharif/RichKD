@@ -109,8 +109,8 @@ class RichKD(Distiller):
         
         losses_dict = {
             "loss_ce": loss_ce,
-            "loss_logit": loss_kd,
-            "loss_feature": loss_crd,
+            "loss_logit": loss_logit,
+            "loss_feature": loss_feature,
         }
         return logits_student, losses_dict
 
