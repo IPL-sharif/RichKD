@@ -15,6 +15,7 @@ SOLVER:
   WEIGHT_DECAY: 0.0005
   MOMENTUM: 0.9
   TYPE: "SGD"
+  TRAINER: "crd" 
 RICH:
   CLIP_LOGITS: "./clip_cache/multi_prompt/cifar100_train_clip_logits.pt"
   TEMPERATURE: 3
